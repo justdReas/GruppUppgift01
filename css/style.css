@@ -28,6 +28,8 @@ body {
     margin-top: -90px;  
     color: #f0ebd2;   
 } 
+
+/*menu base styles*/
 #navigation {
     width: 100%;
     margin: 0 auto;   
@@ -53,9 +55,88 @@ nav a {
 nav a:hover {
     color: #3a7256;
 }
-
-
+.wrapper-1 {
+    text-align: center;
+    width: 100%; 
+}
+.img-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.single-img{
+    padding: 20px 20px 20px;   
+}
+.circular--square{
+    border-radius: 50%;
+}
+img:hover {
+    opacity: .5;
+    transition: .9s;
+}
+.holdingcontainer {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.internalcontainer1 {
+    flex: 1;
+    padding: 30px;
+    font-size: 15px;
+    font-family: 'ABeeZee', sans-serif;
+    margin: 3px;
+    font-weight: bold;
+    color: #8b2929;
+    background: #f0ebd2;
+    border-radius: 10px;
+}
+.internalcontainer2 {
+    flex: 1;
+    padding: 30px;
+    font-size: 15px;
+    font-family: 'ABeeZee', sans-serif;
+    margin: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8b2929;
+    background: #f0ebd2;
+    border-radius: 10px;
+ } 
+ .internalcontainer3 {
+     flex: 1;
+     padding: 30px;
+     font-size: 15px;
+     font-family: 'ABeeZee', sans-serif;
+     margin: 3px;
+     font-weight: bold;
+     color: #8b2929;
+     background: #f0ebd2;
+     border-radius: 10px;
+ }
+.button {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #333;
+    color: #8b2929;
+    padding: 16px 32px;
+    text-decoration: none;    
+    border-radius: 10px;
+    font-size: 16px;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 30px;
+  }  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: #f0ebd2;
+  }
 /* paste all your code above, this is for header and NAV fixed for all pages include @media */
+/* flex styles */
 @media screen and (min-width: 768px) {
 
     nav ul {
@@ -66,6 +147,24 @@ nav a:hover {
         flex: 1 1 0;  /* (flex:  flex-grow flex-shrink flex-basis) */
     }    
  }
+    
+@media screen and (min-width: 768px) {
+
+    nav ul {
+     display: flex;   
+    }
+ 
+    nav li {
+        flex: 1 1 0;  /* (flex:  flex-grow flex-shrink flex-basis) */
+    }    
+ }
+ 
+ @media screen and (max-width: 768px) {
+     .holdingcontainer {
+         flex-direction: column;
+     }
+ }
+ 
 
  @media screen and (max-width: 768px){
     .logo1 {
