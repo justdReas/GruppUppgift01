@@ -7,8 +7,8 @@ body {
     margin: 0;        
 }
 
-.header {   
-    background-image: url(https://raw.githubusercontent.com/justdReas/GruppUppgift01/master/images/Images_1.jpg);
+#header {   
+    background-image: url(https://raw.githubusercontent.com/justdReas/GruppUppgift01/master/img/Images_1.jpg);
     padding-bottom: 50px;
     max-width: 100%; 
     margin: 0 auto;   
@@ -28,7 +28,7 @@ body {
     margin-top: -90px;  
     color: #f0ebd2;   
 } 
-.wrapper {
+#navigation {
     width: 100%;
     margin: 0 auto;   
    max-width: 960px; 
