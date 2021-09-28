@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;      
+}
+
+body {
+    background-color: #f0ebd2;   
+    margin: 0;        
+}
+
+.header {   
+    background-image: url(https://raw.githubusercontent.com/justdReas/GruppUppgift01/master/images/Images_1.jpg);
+    padding-bottom: 50px;
+    max-width: 100%; 
+    margin: 0 auto;   
+}
+
+.logo1 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0;    
+    color: #f0ebd2;
+   
+}
+.logo2 {
+    font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+    margin-top: -90px;  
+    color: #f0ebd2;   
+} 
+.wrapper {
+    width: 100%;
+    margin: 0 auto;   
+   max-width: 960px; 
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /*justfiy-content olabilir*/
+}
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #8b2929; 
+    display: block;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 30px;    
+    font-weight: bold;
+    font-family: 'Annie Use Your Telescope', Arial, Helvetica, sans-serif, sans-serif;;
+}
+nav a:hover {
+    color: #3a7256;
+}
+
+
+/* paste all your code above, this is for header and NAV fixed for all pages include @media */
+@media screen and (min-width: 768px) {
+
+    nav ul {
+     display: flex;   
+    }
+ 
+    nav li {
+        flex: 1 1 0;  /* (flex:  flex-grow flex-shrink flex-basis) */
+    }    
+ }
+
+ @media screen and (max-width: 768px){
+    .logo1 {
+        font-size: 70px;
+        margin-bottom: 15px;
+    }
+
+    .logo2 {
+        font-size: 20px;
+        margin-top: -30px;
+    }
+ }
