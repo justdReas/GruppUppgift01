@@ -17,7 +17,9 @@
     width:90%;
     margin: auto;
     overflow: hidden;
+
 }
+
 #contact-section{
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(../imgs/contact.jpg);
     background-size: cover;
@@ -113,7 +115,7 @@ textarea::placeholder{
     cursor: pointer;
 }
 /*media queries*/
-@media (max-width:768px){
+/*  @media (max-width:768px){ 
     #contact-section .contact-form{
         display: block;
         width: 100%;
@@ -121,8 +123,8 @@ textarea::placeholder{
     }
     #contact-section .submit{
         width: 60%;
-    }
-    
-}
+    }  */
+
+
 
 
