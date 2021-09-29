@@ -33,7 +33,7 @@ body {
 #navigation {
     width: 100%;
     margin: 0 auto;   
-   max-width: 960px; 
+    max-width: 960px; 
 }
 nav ul {
     list-style-type: none;
@@ -135,6 +135,17 @@ img:hover {
     background-color: #4CAF50;
     color: #f0ebd2;
   }
+  .phonelink{
+    position: fixed; /* Lock location always on the scree */
+    bottom: 0; /* Set to the bottom */
+    right: 0; /* Set to the right */
+    margin: 10px; /* Add space around background */   
+  }
+    .icon{
+        width: 50px; /* Set width of icon */
+        height: 50px; /* Set height of icon */
+    } 
+
   .container{
     width:90%;
     margin: auto;
@@ -179,12 +190,13 @@ color: rgb(190,190,190);
     /*grid-gap: 5px;*/
 }
 
-.form{
+/*form{
     font-size: 16px;
     font-style: italic;
-    color:red;
+    color: red;
     letter-spacing: 2px;
-}
+    border: 5px solid blue;
+}*/
 input{
     padding: 10px;
     margin: 10px;
@@ -213,7 +225,7 @@ textarea::placeholder{
 }
 /*button*/
 .submit{
-    width:40%;
+    width: 15%;
     background: none;
     padding:4px;
     outline: none;
@@ -227,12 +239,18 @@ textarea::placeholder{
     margin-left: 3%;
     border: 2px solid rgb(190,190,190);
     color: rgb(190,190,190);
+    border-radius: 10px;
+
 }
-.submit{
-    border: 1px solid #fff;
-    color: #fff;
-    cursor: pointer;
+.submit:hover{
+    background: green;
+    transition-duration: 0.4s;
 }
+h2 {
+    text-align: center;
+}
+    
+ 
 /* paste all your code above, this is for header and NAV fixed for all pages include @media */
 /* flex styles */
 @media screen and (min-width: 768px) {
@@ -275,3 +293,15 @@ textarea::placeholder{
         margin-top: -30px;
     }
  }
+ @media screen and (max-width: 768px){
+   
+    .mobile{
+        display: block; /* On small screens make phone icon appear */
+    }
+}
+@media screen and (min-width: 769px){
+    .mobile{
+        display: none; /* On large screens make phone icon disappear */
+    }
+    
+}
