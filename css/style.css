@@ -18,13 +18,15 @@ body {
     font-family: 'Annie Use Your Telescope', cursive;
     font-size: 100px;
     text-align: center;
-    margin-top: 0;    
+    padding-top: 30px;
+    margin-top: 0;  
     color: #f0ebd2;
    
 }
 .logo2 {
     font-family: 'ABeeZee', sans-serif;
     text-align: center;
+    letter-spacing: 3px;
     margin-top: -90px;  
     color: #f0ebd2;   
 } 
@@ -33,6 +35,19 @@ body {
     margin: 0 auto;   
    max-width: 960px; 
 }
+
+h1 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: bold;
+    color: #8b2929;
+   
+}
+h2 {
+    font-family: 'ABeeZee', sans-serif;
+    color: #8b2929;
+    letter-spacing: 1px;  
+} 
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -54,25 +69,11 @@ nav a:hover {
     color: #3a7256;
 }
 
-.hero {
-    /* Photo by mnm.all on Unsplash */
-    background: url('https://images.unsplash.com/photo-1518176258769-f227c798150e') center;
-    background-size: cover;
-    padding: 4rem 2rem;
-  
-    /* Grid styles */
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
-
-
 .gutter {
-    /* max-width: 1200px; */
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 0.1fr 3fr 0.1fr;
   }
 
 .cards {
@@ -104,22 +105,35 @@ nav a:hover {
         flex: 1 1 0;  /* (flex:  flex-grow flex-shrink flex-basis) */
     }
     .gutter {
-        grid-template-columns: 0.5fr 3fr 0.5fr;
+        grid-template-columns: 0.3fr 3fr 0.3fr;
         grid-auto-flow: dense;
     }
+    
  }
 
- @media screen and (max-width: 768px){
+ @media screen and (max-width: 767px){
+    
+    #header {
+        padding-bottom: 20px;
+    }
+    
     .logo1 {
         font-size: 70px;
+        /* padding-top: 30px; */
         margin-bottom: 15px;
     }
 
     .logo2 {
         font-size: 20px;
+        /* padding-bottom: 15px; */
         margin-top: -30px;
     }
+    nav a {
+        padding: 4px;
+    }
+    
+    .cards {
+        grid-template-columns: 1fr;
+    }
  }
- @media screen {
-     
- }
+
