@@ -289,7 +289,6 @@ span{
 }
 
 
-
 /* paste all your code above, this is for header and NAV fixed for all pages include @media */
 /* flex styles */
 @media screen and (min-width: 768px) {
@@ -302,6 +301,7 @@ span{
         flex: 1 1 0;  /* (flex:  flex-grow flex-shrink flex-basis) */
     }    
  }
+ 
     
 @media screen and (min-width: 768px) {
 
@@ -313,6 +313,7 @@ span{
         flex: 1 1 0;  /* (flex:  flex-grow flex-shrink flex-basis) */
     }    
  }
+
  
  @media screen and (max-width: 768px) {
      .holdingcontainer {
