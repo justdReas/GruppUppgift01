@@ -235,25 +235,26 @@ textarea::placeholder{
     
     }
     
-    .baker {
-    height: 200px;
-    width: 250px;
-    shape-outside: -moz-radial-gradient(50);
+    .pizza img{
+        height: auto;
+        width: 150px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        shape-outside: -moz-radial-gradient(50);
     }
-    .intro__text{
-        padding-left: 25px;
-        height: 300px;
-    }
+
     
     
-    
-    .footer__wrapper{
+    .footer{
         position: absolute;
         bottom: 0;
-        width: 100%;
+        width: 50px;
         height: 0px;
     }
-    .footer__container{ 
+
+    /*button*/
+    .wrapper-1{ 
         display: table;
         text-align: center;
         margin-left: auto;
@@ -262,15 +263,27 @@ textarea::placeholder{
         flex-direction: column;
     }
     
+   
     li {
         list-style: none;
     }
     
     
-    .icon{
-        height: 100px;
-        width: 50px;
-    }
+    .icon2 img{
+        display: inline;
+        height: auto;
+        width: 30px;
+        border: 1px solid rgb(201, 36, 36);
+        }
+
+    h4{
+        display: table;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        flex-direction: column;}
+
 .submit{
     border: 1px solid #fff;
     color: #fff;
