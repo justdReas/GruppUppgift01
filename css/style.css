@@ -35,6 +35,23 @@ body {
     margin: 0 auto;   
     max-width: 960px; 
 }
+
+h7 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 0.8;
+    color: #8b2929;
+   
+}
+h8 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 14px;
+    line-height: 0.3;
+    letter-spacing: 1px; 
+    color: #8b2929;
+} 
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -349,6 +366,11 @@ span{
     background: white;
 }
 
+.card {
+    background-color: beige;
+    border-radius: 20px;
+    padding: 12px; 
+  }
 
 /* paste all your code above, this is for header and NAV fixed for all pages include @media */
 /* flex styles */
