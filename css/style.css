@@ -90,9 +90,9 @@ nav a:hover {
     gap: 5px;
   }
 
-.card {
+/* .card {
     background-color: dodgerblue;    
-  }
+  } */
 
 /* paste all your code above, this is for header and NAV fixed for all pages include @media */
 @media screen and (min-width: 768px) {
