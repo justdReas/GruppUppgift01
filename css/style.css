@@ -446,7 +446,7 @@ nav a:hover {
  }
  
 
- @media screen and (max-width: 768px){
+ @media screen and (max-width: 767px){
     .logo1 {
         font-size: 70px;
         margin-bottom: 15px;
@@ -456,6 +456,11 @@ nav a:hover {
         font-size: 20px;
         margin-top: -30px;
     }
+   
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
  }
  @media screen and (max-width: 768px){
    
